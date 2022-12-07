@@ -1,0 +1,8 @@
+version: '3.4'
+services:
+  asir_dhcpd:
+    image: networkboot/dhcpd
+    network_mode: host
+    container_name: asir_dhcpd
+    volumes:
+      - ./data:/data
